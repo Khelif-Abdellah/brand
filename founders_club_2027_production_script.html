@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[CONFIDENTIAL] BEAUTY 2027 - FOUNDERS CLUB CALL SHEET</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Courier Prime for Screenplay Monospace, Caveat for Red Wax Handwritten Notes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome for Icon Accents -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              scriptBg: "#F5F2EB", // Vintage screenplay off-white paper
+              scriptDarkBg: "#EBE6DC",
+              typewriter: "#1A1A1A", // Dark charcoal ink
+              redWax: "#C82323", // Red revision pencil
+              amberTape: "rgba(217, 185, 125, 0.45)",
+              filmBlack: "#0D0D0D",
+            },
+            fontFamily: {
+              mono: ['"Courier Prime"', "Courier", "monospace"],
+              hand: ['"Caveat"', "cursive"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      body {
+        background-color: #f5f2eb;
+        color: #1a1a1a;
+        font-family: "Courier Prime", Courier, monospace;
+        background-image: radial-gradient(#1a1a1a 0.3px, transparent 0.3px);
+        background-size: 16px 16px;
+        background-color: #f5f2eb;
+      }
+
+      /* Screenplay Paper Left Red Margin Line */
+      .script-paper {
+        position: relative;
+        background: #f5f2eb;
+        box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.08),
+          0 2px 6px -1px rgba(0, 0, 0, 0.04);
+      }
+
+      .script-margin-line {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 28px;
+        width: 1px;
+        background-color: rgba(200, 35, 35, 0.25);
+        z-index: 10;
+      }
+
+      @media (min-width: 640px) {
+        .script-margin-line {
+          left: 54px;
+        }
+      }
+
+      /* Red Rubber Stamp Effect */
+      .stamp-approved {
+        border: 3px solid #c82323;
+        color: #c82323;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 6px 16px;
+        border-radius: 4px;
+        display: inline-block;
+        transform: rotate(-8deg);
+        box-shadow: 0 0 0 2px rgba(200, 35, 35, 0.1);
+        mask-image: radial-gradient(
+          circle,
+          rgba(0, 0, 0, 0.9) 60%,
+          rgba(0, 0, 0, 0.5) 100%
+        );
+        letter-spacing: 2px;
+      }
+
+      .stamp-confidential {
+        border: 2px dashed #c82323;
+        color: #c82323;
+        letter-spacing: 3px;
+        transform: rotate(5deg);
+      }
+
+      /* Masking Tape Visual Effect */
+      .masking-tape {
+        background: rgba(235, 215, 165, 0.65);
+        backdrop-filter: blur(2px);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+        border-left: 2px dashed rgba(255, 255, 255, 0.4);
+        border-right: 2px dashed rgba(255, 255, 255, 0.4);
+      }
+
+      /* 35mm Filmstrip Sprocket Holes */
+      .film-sprockets {
+        background-image: radial-gradient(#f5f2eb 35%, transparent 36%);
+        background-size: 14px 14px;
+        background-position: 0 0;
+      }
+
+      /* Red Wax Handwritten Circles & Overlay */
+      .red-circle-select {
+        border: 2px solid #c82323;
+        border-radius: 58% 42% 63% 37% / 41% 59% 41% 59%;
+        animation: waxPulse 3s infinite alternate ease-in-out;
+      }
+
+      @keyframes waxPulse {
+        0% {
+          transform: scale(0.99) rotate(0deg);
+        }
+        100% {
+          transform: scale(1.02) rotate(2deg);
+        }
+      }
+
+      /* Typing cursor animation */
+      .cursor-blink {
+        animation: blink 1s infinite;
+      }
+      @keyframes blink {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+      }
+
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f5f2eb;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1a1a1a;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body
+    class="min-h-screen text-typewriter antialiased selection:bg-redWax selection:text-white pb-12"
+  >
+    <!-- Production Script Top Metadata Header Bar -->
+    <header
+      class="sticky top-0 z-50 bg-[#F5F2EB]/90 backdrop-blur-md border-b border-typewriter/10 px-4 py-2 text-xs font-mono flex items-center justify-between"
+    >
+      <div
+        class="flex items-center space-x-2 overflow-x-auto whitespace-nowrap"
+      >
+        <span
+          class="inline-block w-2 h-2 rounded-full bg-redWax animate-ping"
+        ></span>
+        <span class="font-bold tracking-widest text-redWax"
+          >LIVE PRODUCTION</span
+        >
+        <span class="text-typewriter/40">|</span>
+        <span class="text-typewriter/70"
+          >SCRIPT NO:
+          <strong class="text-typewriter">2027-FC / REV 0.4</strong></span
+        >
+      </div>
+
+      <!-- Audio Typewriter Sound Effect Toggle -->
+      <button
+        id="soundToggleBtn"
+        onclick="toggleAudio()"
+        class="flex items-center space-x-1 px-2.5 py-1 rounded border border-typewriter/30 hover:bg-typewriter hover:text-scriptBg transition-colors text-xs font-mono"
+      >
+        <i id="soundIcon" class="fa-solid fa-volume-xmark text-redWax"></i>
+        <span id="soundLabel" class="hidden sm:inline"
+          >TYPEWRITER SFX: OFF</span
+        >
+      </button>
+    </header>
+
+    <!-- Main Container styled as standard Screenplay Page -->
+    <main
+      class="max-w-xl md:max-w-2xl lg:max-w-3xl mx-auto mt-4 sm:mt-8 px-2 sm:px-4"
+    >
+      <div
+        class="script-paper border border-typewriter/20 p-4 sm:p-8 md:p-12 min-h-[90vh] relative overflow-hidden rounded-sm"
+      >
+        <!-- Left Margin Line & Revision Asterisks -->
+        <div class="script-margin-line"></div>
+
+        <!-- Margin Revision Marks -->
+        <div
+          class="absolute left-1.5 sm:left-4 top-24 text-redWax font-mono text-xs select-none font-bold"
+        >
+          *
+        </div>
+        <div
+          class="absolute left-1.5 sm:left-4 top-64 text-redWax font-mono text-xs select-none font-bold"
+        >
+          *
+        </div>
+        <div
+          class="absolute left-1.5 sm:left-4 top-[500px] text-redWax font-mono text-xs select-none font-bold"
+        >
+          *
+        </div>
+
+        <!-- Page Watermark Rubber Stamp -->
+        <div
+          class="absolute top-6 right-4 sm:right-8 opacity-80 pointer-events-none select-none"
+        >
+          <div
+            class="stamp-confidential px-2 py-1 text-[10px] sm:text-xs font-bold uppercase rotate-[-12deg]"
+          >
+            CONFIDENTIAL / INTERNAL USE ONLY
+          </div>
+        </div>
+
+        <!-- Header Metadata Block -->
+        <div
+          class="pl-6 sm:pl-10 text-xs text-typewriter/60 font-mono space-y-1 mb-8 border-b border-dashed border-typewriter/20 pb-4"
+        >
+          <div class="flex justify-between flex-wrap gap-1">
+            <span
+              >PROJECT:
+              <strong class="text-typewriter underline uppercase"
+                >UNNAMED BEAUTY HOUSE '27</strong
+              ></span
+            >
+            <span>PAGE 01 OF 01</span>
+          </div>
+          <div class="flex justify-between flex-wrap gap-1">
+            <span>LOCATION: PARIS / NYC LABS</span>
+            <span>DATE: OCT 2026</span>
+          </div>
+          <div>DISTRIBUTION: FOUNDERS CLUB MEMBERS ONLY</div>
+        </div>
+
+        <!-- SCREENPLAY SCENE HEADER -->
+        <div class="pl-6 sm:pl-10 space-y-6">
+          <div
+            class="font-bold tracking-wider text-sm sm:text-base border-b-2 border-typewriter pb-1 inline-block"
+          >
+            SCENE 01: INT. BEAUTY LAB & CREATIVE SUITE - NIGHT
+          </div>
+
+          <!-- Scene Action Description -->
+          <p class="text-xs sm:text-sm leading-relaxed text-typewriter/90">
+            A sterile lab counter under soft tungsten glow. Scattered shade
+            swatches, glass formula vials, and preliminary compact prototypes
+            lie across raw linen. A bold vision takes shape for a 2027 debut.
+            You are invited inside the production before the curtain rises.
+          </p>
+
+          <!-- Handwritten Wax Annotation overlay -->
+          <div class="relative py-2">
+            <div
+              class="text-redWax font-hand text-xl sm:text-2xl transform -rotate-2 leading-none pl-2"
+            >
+              ✍🏼 "We aren't building this in secret. We're building this with
+              you."
+            </div>
+          </div>
+
+          <!-- Character Dialogue Layout -->
+          <div class="py-2 space-y-1 max-w-lg mx-auto text-center">
+            <div
+              class="font-bold tracking-widest text-xs sm:text-sm text-typewriter uppercase"
+            >
+              THE FOUNDER
+            </div>
+            <div class="text-xs text-typewriter/60 italic">
+              (directly to camera)
+            </div>
+            <p
+              class="text-xs sm:text-sm text-left sm:text-center leading-relaxed"
+            >
+              "When we launch in 2027, the initial drop won't belong to retail
+              algorithms. It belongs to our early circle. The ones who cast the
+              votes on our shade range and tested our earliest batch formulas."
+            </p>
+          </div>
+
+          <!-- ======================================================== -->
+          <!-- FUNCTIONAL ELEMENT 1: EMAIL CAPTURE FORM                -->
+          <!-- ======================================================== -->
+          <div
+            class="my-8 pt-4 pb-6 px-4 sm:px-6 bg-scriptDarkBg/50 border-2 border-dashed border-typewriter/30 rounded relative"
+          >
+            <!-- Masking Tape Accent Top Right -->
+            <div
+              class="absolute -top-3 right-6 w-20 h-6 masking-tape transform rotate-3 z-10"
+            ></div>
+
+            <div
+              class="text-xs font-bold uppercase tracking-widest text-typewriter/70 mb-2 flex items-center gap-2"
+            >
+              <i class="fa-solid fa-key text-redWax"></i> STEP 01 // REQUEST
+              PRODUCTION CLEARANCE
+            </div>
+
+            <!-- Interactive Form -->
+            <form
+              id="foundersForm"
+              onsubmit="handleFormSubmit(event)"
+              class="space-y-4"
+            >
+              <div>
+                <label
+                  for="emailInput"
+                  class="block text-xs font-mono text-typewriter/80 mb-1"
+                >
+                  ENTER EMAIL ADDRESS FOR CALL SHEET & DROP NOTIFICATION:
+                </label>
+                <div class="relative">
+                  <span
+                    class="absolute left-3 top-2.5 text-typewriter/40 font-mono text-sm"
+                    >&gt;</span
+                  >
+                  <input
+                    type="email"
+                    id="emailInput"
+                    required
+                    placeholder="founder@domain.com"
+                    class="w-full pl-8 pr-4 py-2.5 bg-scriptBg border border-typewriter/40 text-sm font-mono text-typewriter focus:outline-none focus:border-typewriter focus:ring-1 focus:ring-typewriter rounded-none transition-all placeholder:text-typewriter/30"
+                  />
+                </div>
+              </div>
+
+              <button
+                type="submit"
+                id="submitBtn"
+                class="w-full py-3 bg-typewriter text-scriptBg font-mono text-xs sm:text-sm font-bold tracking-widest uppercase hover:bg-redWax transition-all duration-200 shadow-md active:scale-[0.99] flex items-center justify-center space-x-2 group"
+              >
+                <span>[ REQUEST FOUNDERS CLUB CLEARANCE ]</span>
+                <i
+                  class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"
+                ></i>
+              </button>
+            </form>
+
+            <!-- Animated Submission Output Display (Hidden by default) -->
+            <div
+              id="submissionFeedback"
+              class="hidden mt-4 pt-4 border-t border-typewriter/20 text-center space-y-3"
+            >
+              <div id="stampWrapper" class="py-2">
+                <div class="stamp-approved text-xs sm:text-sm animate-bounce">
+                  APPROVED / ON CALL SHEET #<span id="callSheetNo">0482</span>
+                </div>
+              </div>
+              <div class="text-xs font-mono space-y-1">
+                <p class="text-emerald-700 font-bold">
+                  ✓ EMAIL REGISTERED IN 2027 FOUNDERS REGISTER
+                </p>
+                <p class="text-typewriter/70">
+                  Your clearance status has been saved. Watch your inbox for
+                  Scene 02 directives.
+                </p>
+              </div>
+              <!-- Handwritten note on success -->
+              <div class="text-redWax font-hand text-xl rotate-[-2deg]">
+                Welcome to the inner circle! Check step 02 below. 👇🏼
+              </div>
+            </div>
+          </div>
+
+          <!-- ======================================================== -->
+          <!-- FUNCTIONAL ELEMENT 2: INSTAGRAM BROADCAST BUTTON         -->
+          <!-- ======================================================== -->
+          <div
+            class="my-6 p-4 border-2 border-typewriter bg-scriptBg relative shadow-sm"
+          >
+            <div
+              class="absolute -top-3 left-4 bg-typewriter text-scriptBg px-2 py-0.5 text-[10px] font-mono tracking-wider uppercase"
+            >
+              DIRECTIVE 02: LIVE BROADCAST FEED
+            </div>
+
+            <div
+              class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-1"
+            >
+              <div class="space-y-1">
+                <div
+                  class="flex items-center space-x-2 text-xs font-bold text-typewriter"
+                >
+                  <span class="relative flex h-2.5 w-2.5">
+                    <span
+                      class="animate-ping absolute inline-flex h-full w-full rounded-full bg-redWax opacity-75"
+                    ></span>
+                    <span
+                      class="relative inline-flex rounded-full h-2.5 w-2.5 bg-redWax"
+                    ></span>
+                  </span>
+                  <span>DAILY LAB DAILIES & UNCUT FOOTAGE</span>
+                </div>
+                <p class="text-xs text-typewriter/70 leading-normal">
+                  Join 4,290+ founding members inside our private Instagram
+                  Broadcast Channel for real-time behind-the-scenes polls and
+                  formula lab updates.
+                </p>
+              </div>
+
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                onclick="playClickSound()"
+                class="w-full sm:w-auto whitespace-nowrap px-4 py-3 bg-redWax hover:bg-typewriter text-white text-xs font-mono font-bold tracking-wider uppercase transition-colors shadow flex items-center justify-center space-x-2 group text-center"
+              >
+                <i class="fa-brands fa-instagram text-sm"></i>
+                <span>JOIN IG BROADCAST CHANNEL</span>
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square text-[10px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
+                ></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- SCREENPLAY ACTION BLOCK: FOUNDERS PERKS SECTION -->
+          <div class="my-10 space-y-4">
+            <div
+              class="font-bold tracking-wider text-xs sm:text-sm uppercase border-b border-typewriter/40 pb-1"
+            >
+              SCENE 02: FOUNDERS CLUB PERKS (PRODUCTION PRIVILEGES)
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <!-- Perk 1 -->
+              <div
+                class="p-3 border border-typewriter/30 bg-scriptDarkBg/30 relative"
+              >
+                <div class="text-redWax font-mono text-xs font-bold mb-1">
+                  01 // FIRST DROP ACCESS
+                </div>
+                <div class="font-bold text-xs sm:text-sm mb-1">
+                  GUARANTEED INITIAL BATCH ALLOCATION
+                </div>
+                <p class="text-xs text-typewriter/70 leading-relaxed">
+                  Bypass public waitlists. Priority checkout window 48 hours
+                  prior to global public launch in 2027.
+                </p>
+              </div>
+
+              <!-- Perk 2 -->
+              <div
+                class="p-3 border border-typewriter/30 bg-scriptDarkBg/30 relative"
+              >
+                <div class="text-redWax font-mono text-xs font-bold mb-1">
+                  02 // VOTING RIGHTS
+                </div>
+                <div class="font-bold text-xs sm:text-sm mb-1">
+                  SHADE & PACKAGING DECISIONS
+                </div>
+                <p class="text-xs text-typewriter/70 leading-relaxed">
+                  Vote directly on shade names, packaging finishes, and formula
+                  scents. Help direct the production decisions.
+                </p>
+              </div>
+
+              <!-- Perk 3 -->
+              <div
+                class="p-3 border border-typewriter/30 bg-scriptDarkBg/30 relative"
+              >
+                <div class="text-redWax font-mono text-xs font-bold mb-1">
+                  03 // UNSEEN CONTENT
+                </div>
+                <div class="font-bold text-xs sm:text-sm mb-1">
+                  RAW DAILIES & LAB NOTES
+                </div>
+                <p class="text-xs text-typewriter/70 leading-relaxed">
+                  Receive confidential weekly memo emails containing unedited
+                  lab tests, campaign moodboards, and founder logs.
+                </p>
+              </div>
+
+              <!-- Perk 4 -->
+              <div
+                class="p-3 border border-typewriter/30 bg-scriptDarkBg/30 relative"
+              >
+                <div class="text-redWax font-mono text-xs font-bold mb-1">
+                  04 // CAMPAIGN & SAMPLES
+                </div>
+                <div class="font-bold text-xs sm:text-sm mb-1">
+                  EARLY SAMPLE KITS & SHOOT CASTING
+                </div>
+                <p class="text-xs text-typewriter/70 leading-relaxed">
+                  Randomly selected Founders receive pre-launch lab sample vials
+                  & invitations to participate in our launch campaign shoot.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ======================================================== -->
+          <!-- INTERACTIVE WIDGET: SHADE VOTING PREVIEW                 -->
+          <!-- ======================================================== -->
+          <div
+            class="my-10 p-4 border-2 border-typewriter bg-scriptDarkBg/40 relative"
+          >
+            <div
+              class="flex items-center justify-between border-b border-typewriter/20 pb-2 mb-3"
+            >
+              <span
+                class="text-xs font-bold uppercase tracking-wider text-redWax"
+              >
+                <i class="fa-solid fa-check-to-slot"></i> LIVE VOTING TEST //
+                LAB BATCH #09
+              </span>
+              <span
+                class="text-[10px] font-mono bg-typewriter text-scriptBg px-1.5 py-0.5"
+                >OPEN FOR VOTES</span
+              >
+            </div>
+
+            <p class="text-xs text-typewriter mb-4">
+              <strong>PRODUCER QUESTION:</strong> "Which lipstick finish should
+              lead our maiden 2027 collection?"
+            </p>
+
+            <!-- Voting Options Container -->
+            <div id="votingContainer" class="space-y-3">
+              <!-- Option A -->
+              <button
+                onclick="castVote('shadeA')"
+                class="w-full text-left p-3 border border-typewriter bg-scriptBg hover:border-redWax transition-all group relative overflow-hidden"
+              >
+                <div
+                  id="barShadeA"
+                  class="absolute left-0 top-0 bottom-0 bg-redWax/15 transition-all duration-700"
+                  style="width: 0%"
+                ></div>
+                <div
+                  class="relative z-10 flex justify-between items-center text-xs"
+                >
+                  <div>
+                    <span class="font-bold">[OPTION A] VELVET CRIMSON</span>
+                    <span class="block text-[10px] text-typewriter/60"
+                      >Ultra-matte finish, high pigment payoff</span
+                    >
+                  </div>
+                  <span id="percentA" class="font-mono font-bold text-redWax"
+                    >VOTE</span
+                  >
+                </div>
+              </button>
+
+              <!-- Option B -->
+              <button
+                onclick="castVote('shadeB')"
+                class="w-full text-left p-3 border border-typewriter bg-scriptBg hover:border-redWax transition-all group relative overflow-hidden"
+              >
+                <div
+                  id="barShadeB"
+                  class="absolute left-0 top-0 bottom-0 bg-redWax/15 transition-all duration-700"
+                  style="width: 0%"
+                ></div>
+                <div
+                  class="relative z-10 flex justify-between items-center text-xs"
+                >
+                  <div>
+                    <span class="font-bold">[OPTION B] AMBER DUSK</span>
+                    <span class="block text-[10px] text-typewriter/60"
+                      >Dewy satin sheen, hydrating botanical blend</span
+                    >
+                  </div>
+                  <span id="percentB" class="font-mono font-bold text-redWax"
+                    >VOTE</span
+                  >
+                </div>
+              </button>
+            </div>
+
+            <div
+              id="voteConfirmation"
+              class="hidden mt-3 text-center text-xs font-hand text-redWax text-lg rotate-[-1deg]"
+            >
+              ✓ Vote recorded in production log! Total votes counted today:
+              <span id="totalVotesCount">1,842</span>
+            </div>
+          </div>
+
+          <!-- ======================================================== -->
+          <!-- CONTACT SHEET GALLERY (35mm FILMSTRIP)                   -->
+          <!-- ======================================================== -->
+          <div class="my-10 space-y-3">
+            <div
+              class="flex items-center justify-between border-b border-typewriter pb-1"
+            >
+              <span
+                class="font-bold tracking-wider text-xs sm:text-sm uppercase"
+              >
+                SCENE DAILIES: CONTACT SHEET #04
+              </span>
+              <span class="text-[10px] font-mono text-typewriter/60"
+                >CLICK FRAME TO VIEW DIRECTOR NOTES</span
+              >
+            </div>
+
+            <!-- Filmstrip Wrapper -->
+            <div
+              class="bg-filmBlack p-3 sm:p-4 rounded-sm text-white overflow-hidden shadow-xl"
+            >
+              <!-- Top Sprockets -->
+              <div
+                class="w-full h-4 flex justify-between items-center mb-3 opacity-60"
+              >
+                <div class="w-2.5 h-2 bg-scriptBg/80 rounded-sm"></div>
+                <div class="w-2.5 h-2 bg-scriptBg/80 rounded-sm"></div>
+                <div class="w-2.5 h-2 bg-scriptBg/80 rounded-sm"></div>
+                <div class="w-2.5 h-2 bg-scriptBg/80 rounded-sm"></div>
+                <div class="w-2.5 h-2 bg-scriptBg/80 rounded-sm"></div>
+                <div class="w-2.5 h-2 bg-scriptBg/80 rounded-sm"></div>
+                <div class="w-2.5 h-2 bg-scriptBg/80 rounded-sm"></div>
+              </div>
+
+              <!-- Film Frame Grid -->
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                <!-- Frame 1 -->
+                <div
+                  onclick="openLightbox(0)"
+                  class="cursor-pointer group relative bg-neutral-900 border border-neutral-700 p-2 hover:border-redWax transition-colors"
+                >
+                  <div
+                    class="text-[9px] font-mono text-amber-500/80 mb-1 flex justify-between"
+                  >
+                    <span>KODAK 400TX</span>
+                    <span>12A</span>
+                  </div>
+                  <div
+                    class="relative overflow-hidden aspect-square bg-neutral-800"
+                  >
+                    <img
+                      src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=600&q=80"
+                      alt="Lipstick Swatch Test"
+                      onerror="this.src='https://placehold.co/400x400/1a1a1a/ffffff?text=SWATCH+TEST'"
+                      class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                    />
+
+                    <!-- Red Wax Circled Select Overlay -->
+                    <div
+                      class="absolute inset-1 red-circle-select pointer-events-none opacity-80"
+                    ></div>
+                    <span
+                      class="absolute top-1 right-1 bg-redWax text-white text-[8px] font-bold px-1 rounded-sm"
+                      >SELECT</span
+                    >
+                  </div>
+                  <div
+                    class="mt-1.5 text-[9px] font-mono text-neutral-300 truncate"
+                  >
+                    [FIG 1: SHADE LAB TEST]
+                  </div>
+                </div>
+
+                <!-- Frame 2 -->
+                <div
+                  onclick="openLightbox(1)"
+                  class="cursor-pointer group relative bg-neutral-900 border border-neutral-700 p-2 hover:border-redWax transition-colors"
+                >
+                  <div
+                    class="text-[9px] font-mono text-amber-500/80 mb-1 flex justify-between"
+                  >
+                    <span>KODAK 400TX</span>
+                    <span>13A</span>
+                  </div>
+                  <div
+                    class="relative overflow-hidden aspect-square bg-neutral-800"
+                  >
+                    <img
+                      src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=600&q=80"
+                      alt="Packaging Prototype"
+                      onerror="this.src='https://placehold.co/400x400/1a1a1a/ffffff?text=PACKAGING+TEST'"
+                      class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                    />
+                  </div>
+                  <div
+                    class="mt-1.5 text-[9px] font-mono text-neutral-300 truncate"
+                  >
+                    [FIG 2: COMPACT MOLD]
+                  </div>
+                </div>
+
+                <!-- Frame 3 -->
+                <div
+                  onclick="openLightbox(2)"
+                  class="cursor-pointer group relative bg-neutral-900 border border-neutral-700 p-2 hover:border-redWax transition-colors col-span-2 sm:col-span-1"
+                >
+                  <div
+                    class="text-[9px] font-mono text-amber-500/80 mb-1 flex justify-between"
+                  >
+                    <span>KODAK 400TX</span>
+                    <span>14A</span>
+                  </div>
+                  <div
+                    class="relative overflow-hidden aspect-square bg-neutral-800"
+                  >
+                    <img
+                      src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80"
+                      alt="Editorial BTS Moodboard"
+                      onerror="this.src='https://placehold.co/400x400/1a1a1a/ffffff?text=BTS+CAMPAIGN'"
+                      class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                    />
+                    <!-- Red Wax Circled Select Overlay -->
+                    <div
+                      class="absolute inset-2 red-circle-select pointer-events-none opacity-80"
+                    ></div>
+                  </div>
+                  <div
+                    class="mt-1.5 text-[9px] font-mono text-neutral-300 truncate"
+                  >
+                    [FIG 3: CAMPAIGN MOOD]
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bottom Sprockets -->
+              <div
+                class="w-full h-4 flex justify-between items-center mt-3 opacity-60"
+              >
+                <div class="w-2.5 h-2 bg-scriptBg/80 rounded-sm"></div>
+                <div class="w-2.5 h-2 bg-scriptBg/80 rounded-sm"></div>
+                <div class="w-2.5 h-2 bg-scriptBg/80 rounded-sm"></div>
+                <div class="w-2.5 h-2 bg-scriptBg/80 rounded-sm"></div>
+                <div class="w-2.5 h-2 bg-scriptBg/80 rounded-sm"></div>
+                <div class="w-2.5 h-2 bg-scriptBg/80 rounded-sm"></div>
+                <div class="w-2.5 h-2 bg-scriptBg/80 rounded-sm"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- END OF SCRIPT CREDITS & FOOTER -->
+          <div
+            class="pt-8 pb-4 text-center border-t border-dashed border-typewriter/30 space-y-2"
+          >
+            <div
+              class="font-bold tracking-widest text-xs uppercase text-typewriter"
+            >
+              [ END OF SCENE 01 - PRODUCTION CONTINUES ]
+            </div>
+            <p class="text-[11px] font-mono text-typewriter/60">
+              OFFICIAL PRE-LAUNCH DIRECTORY FOR 2027 BRAND DEBUT.<br />
+              PRINTED ON 100% RECYCLED PRODUCTION STOCK.
+            </p>
+            <div class="text-[10px] text-typewriter/40 font-mono">
+              © 2027 BEAUTY HOUSE HOLDINGS. ALL RIGHTS RESERVED.
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ======================================================== -->
+    <!-- INTERACTIVE LIGHTBOX MODAL FOR CONTACT SHEET             -->
+    <!-- ======================================================== -->
+    <div
+      id="photoModal"
+      class="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden items-center justify-center p-4"
+    >
+      <div
+        class="bg-scriptBg max-w-lg w-full border-2 border-typewriter p-4 sm:p-6 relative shadow-2xl space-y-4"
+      >
+        <!-- Close Button -->
+        <button
+          onclick="closeLightbox()"
+          class="absolute top-2 right-2 w-8 h-8 flex items-center justify-center bg-typewriter text-scriptBg font-mono text-sm hover:bg-redWax transition-colors"
+        >
+          ✕
+        </button>
+
+        <!-- Modal Content Header -->
+        <div
+          class="text-xs font-mono text-redWax font-bold tracking-wider border-b border-typewriter/20 pb-2"
+        >
+          DAILIES INSPECTION // DIRECTOR'S NOTE
+        </div>
+
+        <div
+          class="aspect-video bg-neutral-900 relative overflow-hidden border border-typewriter/30"
+        >
+          <img
+            id="modalImage"
+            src=""
+            alt="Dailies preview"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <div class="space-y-2 font-mono">
+          <div id="modalTitle" class="font-bold text-sm text-typewriter">
+            [FIG 1: SHADE LAB TEST #04]
+          </div>
+          <p id="modalDesc" class="text-xs text-typewriter/80 leading-relaxed">
+            Formula test #04 utilizing cold-pressed botanical oils. Pigment
+            stability verified at 38°C. Selected for final sample production
+            batch.
+          </p>
+          <div class="text-redWax font-hand text-xl pt-1">
+            ✍🏼 "This shade is approved for the initial drop."
+          </div>
+        </div>
+
+        <button
+          onclick="closeLightbox()"
+          class="w-full py-2 bg-typewriter text-scriptBg font-mono text-xs font-bold uppercase tracking-wider hover:bg-redWax transition-colors"
+        >
+          CLOSE INSPECTION MEMO
+        </button>
+      </div>
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- JAVASCRIPT LOGIC & SYNTHESIZED WEB AUDIO                 -->
+    <!-- ======================================================== -->
+    <script>
+      /* ---------------------------------------------------- */
+      /* Web Audio API Synthesizer (No external sound files) */
+      /* ---------------------------------------------------- */
+      let soundEnabled = false;
+      let audioCtx = null;
+
+      function initAudio() {
+        if (!audioCtx) {
+          audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        }
+      }
+
+      function toggleAudio() {
+        initAudio();
+        soundEnabled = !soundEnabled;
+        const icon = document.getElementById("soundIcon");
+        const label = document.getElementById("soundLabel");
+
+        if (soundEnabled) {
+          icon.className = "fa-solid fa-volume-high text-emerald-600";
+          label.textContent = "TYPEWRITER SFX: ON";
+          playTypewriterKey();
+        } else {
+          icon.className = "fa-solid fa-volume-xmark text-redWax";
+          label.textContent = "TYPEWRITER SFX: OFF";
+        }
+      }
+
+      // Synthesize mechanical typewriter click sound
+      function playTypewriterKey() {
+        if (!soundEnabled || !audioCtx) return;
+        try {
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+
+          // Short click sound
+          osc.type = "triangle";
+          osc.frequency.setValueAtTime(
+            180 + Math.random() * 80,
+            audioCtx.currentTime
+          );
+          osc.frequency.exponentialRampToValueAtTime(
+            40,
+            audioCtx.currentTime + 0.03
+          );
+
+          gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(
+            0.01,
+            audioCtx.currentTime + 0.03
+          );
+
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+
+          osc.start();
+          osc.stop(audioCtx.currentTime + 0.03);
+        } catch (e) {
+          console.log(e);
+        }
+      }
+
+      // Synthesize typewriter carriage return bell sound
+      function playTypewriterBell() {
+        if (!soundEnabled || !audioCtx) return;
+        try {
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+
+          osc.type = "sine";
+          osc.frequency.setValueAtTime(1200, audioCtx.currentTime);
+
+          gain.gain.setValueAtTime(0.2, audioCtx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(
+            0.001,
+            audioCtx.currentTime + 0.5
+          );
+
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+
+          osc.start();
+          osc.stop(audioCtx.currentTime + 0.5);
+        } catch (e) {
+          console.log(e);
+        }
+      }
+
+      function playClickSound() {
+        playTypewriterKey();
+      }
+
+      // Add typewriter audio listener to email input field typing
+      document.addEventListener("DOMContentLoaded", () => {
+        const emailInput = document.getElementById("emailInput");
+        if (emailInput) {
+          emailInput.addEventListener("keydown", () => {
+            playTypewriterKey();
+          });
+        }
+      });
+
+      /* ---------------------------------------------------- */
+      /* Email Capture Form Submission Handler                */
+      /* ---------------------------------------------------- */
+      function handleFormSubmit(event) {
+        event.preventDefault();
+
+        const email = document.getElementById("emailInput").value;
+        if (!email) return;
+
+        // Play celebratory typewriter bell
+        playTypewriterBell();
+
+        // Random Call Sheet number generator for personalized feel
+        const randomCallNo = Math.floor(1000 + Math.random() * 9000);
+        document.getElementById("callSheetNo").textContent = randomCallNo;
+
+        // Hide submit button & show feedback block
+        document
+          .getElementById("foundersForm")
+          .classList.add("opacity-50", "pointer-events-none");
+        const feedback = document.getElementById("submissionFeedback");
+        feedback.classList.remove("hidden");
+
+        // Scroll feedback into view smoothly on mobile
+        feedback.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+
+      /* ---------------------------------------------------- */
+      /* Interactive Shade Voting Handler                     */
+      /* ---------------------------------------------------- */
+      let voted = false;
+      function castVote(shadeOption) {
+        if (voted) return;
+        voted = true;
+
+        playTypewriterKey();
+
+        const barA = document.getElementById("barShadeA");
+        const barB = document.getElementById("barShadeB");
+        const percentA = document.getElementById("percentA");
+        const percentB = document.getElementById("percentB");
+        const confirmation = document.getElementById("voteConfirmation");
+
+        let pctA = shadeOption === "shadeA" ? 68 : 32;
+        let pctB = shadeOption === "shadeB" ? 68 : 32;
+
+        barA.style.width = pctA + "%";
+        barB.style.width = pctB + "%";
+
+        percentA.textContent = pctA + "%";
+        percentB.textContent = pctB + "%";
+
+        if (shadeOption === "shadeA") {
+          percentA.textContent += " [YOUR VOTE]";
+        } else {
+          percentB.textContent += " [YOUR VOTE]";
+        }
+
+        confirmation.classList.remove("hidden");
+      }
+
+      /* ---------------------------------------------------- */
+      /* Lightbox Modal Data & Logic                         */
+      /* ---------------------------------------------------- */
+      const galleryData = [
+        {
+          title: "[FIG 1: SHADE LAB TEST #04]",
+          src: "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=600&q=80",
+          desc: "High-concentration pigment trial. Lab Batch #04 evaluated for viscosity and non-drying matte texture. Circled select for 2027 core shade lineup.",
+        },
+        {
+          title: "[FIG 2: COMPACT PACKAGING MOLD]",
+          src: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=600&q=80",
+          desc: "Custom heavy-weight aluminum casing prototype. Features magnetic closure system and debossed batch numbers.",
+        },
+        {
+          title: "[FIG 3: CAMPAIGN MOOD BOARD]",
+          src: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+          desc: "Lighting test and model casting direction for 2027 launch campaign. Focus on raw skin texture, high fashion editorial lighting, and unretouched elegance.",
+        },
+      ];
+
+      function openLightbox(index) {
+        playTypewriterKey();
+        const data = galleryData[index];
+        if (!data) return;
+
+        document.getElementById("modalImage").src = data.src;
+        document.getElementById("modalTitle").textContent = data.title;
+        document.getElementById("modalDesc").textContent = data.desc;
+
+        const modal = document.getElementById("photoModal");
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+      }
+
+      function closeLightbox() {
+        playTypewriterKey();
+        const modal = document.getElementById("photoModal");
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+      }
+    </script>
+  </body>
+</html>
